@@ -18,7 +18,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developers cup - applying</title>
+    <title>Developers Cup - Applying</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
     <!-- Essential styles-->
@@ -28,7 +28,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
     <!-- Tagify -->
-    <!-- <link rel="stylesheet" href="plugins/tagify/dist/tagify.css" /> -->
+    <link rel="stylesheet" href="plugins/tagify/dist/tagify.css" />
     <!-- normalize Stylesheet -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Main Stylesheet -->
@@ -120,6 +120,10 @@
     <!-- end slide bar -->
     <!-- start from -->
     <section class="form">
+      <div class="message">
+        please, fill-out the form or else 🔪
+        <span></span>
+      </div>
       <div class="container">
         <div class="title">
           <h4>enter the competition</h4>
@@ -137,8 +141,8 @@
                   <span>choose a programming field:</span>
                   <div class="select">
                     <i class="bi bi-caret-down-fill"></i>
-                    <div class="selectBtn" data-type="webDevelopment">
-                      Web Development
+                    <div class="selectBtn one" data-type="None">
+                      Programming Field
                     </div>
                     <div class="selectDropdown">
                       <div class="option main" data-type="webDevelopment">
@@ -154,47 +158,47 @@
                   <span>choose a subcategory:</span>
                   <div class="select">
                     <i class="bi bi-caret-down-fill"></i>
-                    <div class="selectBtn" data-type="firstOption">
-                      First option
+                    <div class="selectBtn two nono" data-type="firstOption">
+                      Subcategory
                     </div>
                     <div class="selectDropdown">
                       <div
-                        class="option"
+                        class="option secondary"
                         data-type="fontEnd"
                         data-field="webDevelopment"
                       >
                         front end development
                       </div>
                       <div
-                        class="option"
+                        class="option secondary"
                         data-type="backEnd"
                         data-field="webDevelopment"
                       >
                         back end development
                       </div>
                       <div
-                        class="option"
+                        class="option secondary"
                         data-type="fullStack"
                         data-field="webDevelopment"
                       >
                         full Stack
                       </div>
                       <div
-                        class="option"
+                        class="option secondary"
                         data-type="levelDesign"
                         data-field="game-development"
                       >
                         levelDesign
                       </div>
                       <div
-                        class="option"
+                        class="option secondary"
                         data-type="characterDesign"
                         data-field="game-development"
                       >
                         character Design
                       </div>
                       <div
-                        class="option"
+                        class="option secondary"
                         data-type="testing"
                         data-field="game-development"
                       >
@@ -205,14 +209,16 @@
                 </div>
               </div>
               <div class="write-tags">
-                <input
-                  type="text"
-                  class="tagify-input"
-                  placeholder="add your additional skills"
-                />
+                <textarea name="tags2" placeholder="add your additional skills">
+                </textarea>
               </div>
               <div class="tags">
-                <div class="here"></div>
+                <textarea
+                  name=""
+                  id=""
+                  class="here"
+                  placeholder="Tell Us About Your Self"
+                ></textarea>
               </div>
               <div class="question">
                 <span>Are you a node js user?</span>
@@ -229,17 +235,7 @@
       </div>
     </section>
     <!--     
-      choose a programming field
-      -frontend 
-      -backend 
-      -fullstack 
-      -software
-      -engineer
-      -games-development 
-      -android 
-      -computer programs
-      
-      الانبوت بيكون سيليكت و اذا اخترت باك اند او فول ستاك بيطلع تشيك بوكس فيه 
+
       
       -Additional Skills(optional) 
       tags input with js with suggestions (auto compete) (to put your skills) 
@@ -274,7 +270,7 @@
     <!-- end footer  -->
     <!-- Essential Scripts-->
     <!-- Tagify -->
-    <!-- <script src="plugins/tagify/dist/tagify.min.js"></script> -->
+    <script src="plugins/tagify/dist/tagify.min.js"></script>
     <!-- main js  -->
     <script src="js/apply.js"></script>
   </body>
